@@ -3,7 +3,7 @@
 import sys
 import subprocess
 
-graphics = subprocess.check_output(['ls','/sys/class/backlight/']).decode('utf-8')[:-1]
+graphics = subprocess.check_output(['ls','/sys/class/backlight/']).decode('utf-8').split('\n')[0]
 file = open(f'/sys/class/backlight/{graphics}/brightness', 'r+') 
 
 brightness=0
