@@ -11,10 +11,6 @@ brightness=0
 if len(sys.argv) == 2:
 	
 	if int(sys.argv[1]) <= 100 and int(sys.argv[1]) >0:
-		brightness=(int(sys.argv[1]))*2.55
-		
-		for each in file: 
-		    brightness=int(each)
 
 		brightness=int((int(sys.argv[1]))*2.55)
 		file.write(str(brightness))
